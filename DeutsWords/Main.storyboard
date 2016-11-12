@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="g0S-mm-WbX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PoloST11K-Buch.ttf">
+            <string>PoloST11K-Buch</string>
+        </array>
+        <array key="PoloST11K-Fett.ttf">
+            <string>PoloST11K-Fett</string>
+        </array>
+        <array key="PoloST11K-Krftg.ttf">
+            <string>PoloST11K-Krftg</string>
+        </array>
+        <array key="PoloST11K-Leicht.ttf">
+            <string>PoloST11K-Leicht</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="d55-y4-k1i">
+            <objects>
+                <viewController id="g0S-mm-WbX" customClass="ViewController" customModule="DeutsWords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nnq-qd-SWV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yys-47-F8d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bZf-bG-VEw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Klett und Balmer AG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x08-cL-iUZ">
+                                <rect key="frame" x="10" y="643" width="129" height="17"/>
+                                <fontDescription key="fontDescription" name="PoloST11K-Buch" family="PoloST11K-Buch" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vl3-Xz-1WE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-FR-oSZ">
+                                        <rect key="frame" x="288" y="-5" width="77" height="59"/>
+                                        <fontDescription key="fontDescription" name="PoloST11K-Fett" family="PoloST11K-Fett" pointSize="40"/>
+                                        <state key="normal" title="Idee">
+                                            <color key="titleColor" red="0.91764705882352937" green="0.082352941176470587" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ideeButtonAction:" destination="g0S-mm-WbX" eventType="touchUpInside" id="mf1-n8-vxu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCd-Zt-5T3">
+                                        <rect key="frame" x="10" y="-5" width="154" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="154" id="OaF-yB-v4a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PoloST11K-Fett" family="PoloST11K-Fett" pointSize="40"/>
+                                        <state key="normal" title="Blau">
+                                            <color key="titleColor" red="0.91764705882352937" green="0.082352941176470587" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="colorButtonAction:" destination="g0S-mm-WbX" eventType="touchDown" id="hzZ-cT-LSQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="PCd-Zt-5T3" firstAttribute="centerY" secondItem="vl3-Xz-1WE" secondAttribute="centerY" id="7F3-J1-nJC"/>
+                                    <constraint firstItem="PCd-Zt-5T3" firstAttribute="leading" secondItem="vl3-Xz-1WE" secondAttribute="leading" constant="10" id="9TU-ur-CDC"/>
+                                    <constraint firstAttribute="trailing" secondItem="wzU-FR-oSZ" secondAttribute="trailing" constant="10" id="M4g-ZI-vch"/>
+                                    <constraint firstItem="wzU-FR-oSZ" firstAttribute="centerY" secondItem="vl3-Xz-1WE" secondAttribute="centerY" id="ZuS-MZ-LPj"/>
+                                    <constraint firstAttribute="height" constant="49" id="eaO-zb-QGT"/>
+                                </constraints>
+                            </view>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-7u-iSr">
+                                <rect key="frame" x="156" y="310" width="64" height="48"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9f4-Mk-S8s">
+                                <rect key="frame" x="124" y="287" width="128" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="dAr-oX-yg9"/>
+                                    <constraint firstAttribute="height" constant="94" id="h4C-Gu-hs1"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUT-8T-p1W">
+                                <rect key="frame" x="188" y="334" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PoloST11K-Leicht" family="PoloST11K-Leicht" pointSize="400"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f34-Lc-iDY">
+                                <rect key="frame" x="36" y="64" width="303" height="235"/>
+                                <string key="text">Vielen Dank, dass Sie die App «Ein Wort» genutzt haben.
+
+Das Kunstprojekt war Teil einer Reihe kultureller Interventionen im Rahmen der Klett und Balmer-Neujahrsedition 2017.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="PoloST11K-Leicht" family="PoloST11K-Leicht" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dz-YV-vtA">
+                                <rect key="frame" x="10" y="660" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="PoloST11K-Krftg" family="PoloST11K-Krftg" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-uw-cau">
+                                <rect key="frame" x="10" y="575" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TSH-on-JUc"/>
+                                    <constraint firstAttribute="width" constant="46" id="UbO-ed-7A0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="previosDay:" destination="g0S-mm-WbX" eventType="touchUpInside" id="STi-DT-olQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06o-6r-OS6">
+                                <rect key="frame" x="314" y="575" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W8S-2T-VDr"/>
+                                    <constraint firstAttribute="width" constant="46" id="aij-Po-Qr9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="nextDay:" destination="g0S-mm-WbX" eventType="touchUpInside" id="9MV-1c-xai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.082352941176470587" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="x08-cL-iUZ" firstAttribute="top" secondItem="7CE-uw-cau" secondAttribute="bottom" constant="38" id="8fp-CT-7av"/>
+                            <constraint firstItem="06o-6r-OS6" firstAttribute="trailing" secondItem="bZf-bG-VEw" secondAttribute="trailingMargin" constant="10" id="GUv-Q5-2Jf"/>
+                            <constraint firstItem="uUT-8T-p1W" firstAttribute="centerX" secondItem="bZf-bG-VEw" secondAttribute="centerX" id="Grw-CR-A5Y"/>
+                            <constraint firstItem="3Dz-YV-vtA" firstAttribute="leading" secondItem="bZf-bG-VEw" secondAttribute="leading" constant="10" id="IdY-1y-Chc"/>
+                            <constraint firstItem="x08-cL-iUZ" firstAttribute="leading" secondItem="bZf-bG-VEw" secondAttribute="leading" constant="10" id="JlE-Yo-xNx"/>
+                            <constraint firstItem="f34-Lc-iDY" firstAttribute="leading" secondItem="bZf-bG-VEw" secondAttribute="leadingMargin" constant="20" id="Qu2-Nj-GJQ"/>
+                            <constraint firstItem="f34-Lc-iDY" firstAttribute="top" secondItem="vl3-Xz-1WE" secondAttribute="bottom" constant="15" id="Xi3-Yv-akq"/>
+                            <constraint firstItem="9f4-Mk-S8s" firstAttribute="centerY" secondItem="bZf-bG-VEw" secondAttribute="centerY" id="Y2U-rd-H99"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f34-Lc-iDY" secondAttribute="trailing" constant="20" id="fKJ-xw-k0p"/>
+                            <constraint firstItem="9f4-Mk-S8s" firstAttribute="centerX" secondItem="bZf-bG-VEw" secondAttribute="centerX" id="gvN-cs-7Nm"/>
+                            <constraint firstItem="Yys-47-F8d" firstAttribute="top" secondItem="x08-cL-iUZ" secondAttribute="bottom" constant="7" id="hwa-z9-Yaq"/>
+                            <constraint firstItem="MAH-7u-iSr" firstAttribute="centerY" secondItem="9f4-Mk-S8s" secondAttribute="centerY" id="mdK-HR-x4h"/>
+                            <constraint firstAttribute="trailing" secondItem="vl3-Xz-1WE" secondAttribute="trailing" id="oXd-TT-JaJ"/>
+                            <constraint firstItem="vl3-Xz-1WE" firstAttribute="leading" secondItem="bZf-bG-VEw" secondAttribute="leading" id="qDb-NF-ym9"/>
+                            <constraint firstItem="uUT-8T-p1W" firstAttribute="centerY" secondItem="bZf-bG-VEw" secondAttribute="centerY" id="swb-5n-nbK"/>
+                            <constraint firstItem="vl3-Xz-1WE" firstAttribute="top" secondItem="bZf-bG-VEw" secondAttribute="top" id="tle-1i-O8M"/>
+                            <constraint firstItem="Yys-47-F8d" firstAttribute="top" secondItem="3Dz-YV-vtA" secondAttribute="bottom" constant="7" id="vSY-Y4-ogn"/>
+                            <constraint firstItem="MAH-7u-iSr" firstAttribute="centerX" secondItem="9f4-Mk-S8s" secondAttribute="centerX" id="w1P-R9-hCs"/>
+                            <constraint firstItem="7CE-uw-cau" firstAttribute="leading" secondItem="bZf-bG-VEw" secondAttribute="leading" constant="10" id="ykW-ia-ugG"/>
+                            <constraint firstItem="06o-6r-OS6" firstAttribute="centerY" secondItem="7CE-uw-cau" secondAttribute="centerY" id="zdp-pt-h9e"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="arrow" destination="MAH-7u-iSr" id="RWy-Fp-MFV"/>
+                        <outlet property="arrowView" destination="9f4-Mk-S8s" id="6m7-dQ-79R"/>
+                        <outlet property="brandLabel" destination="x08-cL-iUZ" id="sTI-2I-dJa"/>
+                        <outlet property="colorButton" destination="PCd-Zt-5T3" id="sOR-C0-sTH"/>
+                        <outlet property="dateLabel" destination="3Dz-YV-vtA" id="JEa-HI-A0S"/>
+                        <outlet property="ideeButton" destination="wzU-FR-oSZ" id="rbr-XR-uFS"/>
+                        <outlet property="noWordTextView" destination="f34-Lc-iDY" id="gnc-YN-a7e"/>
+                        <outlet property="wordLabel" destination="uUT-8T-p1W" id="XO6-JD-scC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EO7-q0-jeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2362.4000000000001" y="-1416.3418290854574"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow" width="64" height="48"/>
+    </resources>
+</document>
